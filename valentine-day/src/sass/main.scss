@@ -73,7 +73,7 @@ h1 {
     transition: all 500ms;
 }
 
-.stage_choose-button {
+.stage_choose-button{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -82,7 +82,8 @@ h1 {
     margin-top: 50px;
 }
 
-.stage_button {
+.stage_button,
+.stage__letter-button  {
     cursor: pointer;
     width: 250px;
     height: 50px;
@@ -91,9 +92,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto;
     box-shadow: 10px 5px 5px #444875;
     transition: all 500ms;
+
 }
 
 .stage_button_no {
@@ -118,6 +120,7 @@ h1 {
         "coupon ... static"
     ;
     gap: 50px;
+    display: none;
 }
 
 .stage__letter {
@@ -174,7 +177,14 @@ h1 {
     transition: all 500ms;
     filter: hue-rotate(25deg);
 }
-
+.stage__letter-block{
+    margin: 0 50px;
+    font-size: 16px;
+}
+.stage_text-letter{
+    text-align: left;
+    text-indent: 30px;
+}
 .footer__link {
     margin: 30px 0
 }
