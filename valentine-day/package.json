@@ -1,0 +1,33 @@
+{
+  "name": "valentine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "deploy": "npm run build && npx gh-pages -d dist -e",
+    "clear": "rd /s /q dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.9.0",
+    "html-webpack-plugin": "^5.6.0",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.1",
+    "favicons": "^7.1.5",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
