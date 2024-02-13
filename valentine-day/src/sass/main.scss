@@ -20,6 +20,7 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+    color: #FFE4E1;
 }
 
 h1 {
@@ -29,6 +30,30 @@ h1 {
     margin: 40px 0 20px;
 }
 
+.start__heart {
+    cursor: pointer;
+    width: 520px;
+    height: 450px;
+    background: url(../assets/img/big-heart.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center;
+    transition: all 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__heart:hover {
+    transition: all 500ms;
+    background-size: 115%;
+    font-size: 40px;
+}
+
+.start__heart:active {
+    transition: all 500ms;
+    filter: hue-rotate(-85deg);
+}
 
 .footer__link {
     margin: 30px 0
@@ -36,6 +61,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #FFE4E1;
     font-size: 20px;
+    color: #FFE4E1;
+
 }
