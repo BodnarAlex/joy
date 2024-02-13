@@ -63,6 +63,7 @@ h1 {
     align-items: center;
     font-size: 25px;
     margin: 0 100px;
+    display: none;
 }
 
 .stage_text {
@@ -108,6 +109,70 @@ h1 {
 .stage_button_yes:hover {
     transition: all 500ms;
     filter: contrast(130%);
+}
+
+.stage__finish {
+    display: grid;
+    grid-template-areas:
+        "letter letter letter"
+        "coupon ... static"
+    ;
+    gap: 50px;
+}
+
+.stage__letter {
+    grid-area: letter;
+    justify-self: center;
+    align-self: center;
+    width: 400px;
+    height: 350px;
+    background: url(../assets/img/letter.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    transition: all 500ms;
+
+}
+
+.stage__static {
+    grid-area: static;
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    background: url(../assets/img/stats.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    transition: all 500ms;
+    margin: 0 50px;
+}
+
+.stage__coupon {
+    grid-area: coupon;
+    justify-self: center;
+    align-self: center;
+    width: 350px;
+    height: 200px;
+    background: url(../assets/img/coupon.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    transition: all 500ms;
+    margin: 0 50px;
+
+}
+.stage__finish-icon{
+    cursor: pointer;
+}
+.stage__finish-icon:hover {
+    transition: all 500ms;
+    background-size: 100%;
+}
+
+.stage__finish-icon:active {
+    transition: all 500ms;
+    filter: hue-rotate(25deg);
 }
 
 .footer__link {
