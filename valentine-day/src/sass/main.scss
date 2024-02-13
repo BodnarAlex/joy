@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100svw;
+    height: 100svh;
+    margin: 0;
+    background: linear-gradient(90deg, #FFD1DC 5%, #FFF0F5 30%, #FFD1DC 100%);
+}
+.body__wrapper{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background: linear-gradient(#e66465,#9198e5);
+}
